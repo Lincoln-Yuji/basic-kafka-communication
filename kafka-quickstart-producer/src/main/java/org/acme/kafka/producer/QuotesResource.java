@@ -3,10 +3,10 @@ package org.acme.kafka.producer;
 import java.util.UUID;
 
 import org.acme.kafka.model.Quote;
+import org.eclipse.microprofile.reactive.messaging.Channel;
+import org.eclipse.microprofile.reactive.messaging.Emitter;
 
 import io.smallrye.mutiny.Multi;
-import io.smallrye.reactive.messaging.annotations.Channel;
-import io.smallrye.reactive.messaging.annotations.Emitter;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;

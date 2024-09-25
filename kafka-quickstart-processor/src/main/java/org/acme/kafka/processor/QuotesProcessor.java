@@ -18,7 +18,7 @@ public class QuotesProcessor {
     @Outgoing("quotes")
     @Blocking
     public Quote process(String quoteRequest) throws InterruptedException {
-        Thread.sleep(200);
+        Thread.sleep(500);
         return new Quote(quoteRequest, rand.nextInt(100));
     }
 }
